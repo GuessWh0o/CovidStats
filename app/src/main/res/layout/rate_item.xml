@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding">
+
+        <TextView
+            android:id="@+id/tv_country_name"
+            style="@style/CurrencyName"
+            android:paddingBottom="16dp"
+            android:text="fsdhlkfsdlfjsdlkf"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_favorite_unselected"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/ll_country_confirmed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_country_name">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Total Confirmed"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_country_confirmed"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="2232"
+                android:textAlignment="center"
+                android:textColor="#673AB7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_new_country_confirmed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@id/ll_country_confirmed"
+            app:layout_constraintStart_toStartOf="@id/ll_country_confirmed"
+            app:layout_constraintTop_toBottomOf="@+id/ll_country_confirmed">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="New cases"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#74212121" />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_new_country_confirmed"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="20dp"-->
+            <!--                android:text="In development"-->
+            <!--                android:textAlignment="center"-->
+            <!--                android:textStyle="bold|italic"-->
+            <!--                android:textColor="#61212121" />-->
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_country_death"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@id/ll_country_recovered"
+            app:layout_constraintStart_toEndOf="@+id/ll_country_confirmed"
+            app:layout_constraintTop_toBottomOf="@+id/tv_country_name">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Total Deaths"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_country_death"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="2111"
+                android:textAlignment="center"
+                android:textColor="#CA1B0E" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_new_country_death"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@id/ll_country_death"
+            app:layout_constraintStart_toStartOf="@id/ll_country_death"
+            app:layout_constraintTop_toBottomOf="@+id/ll_country_death">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="New cases"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#74212121"/>
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_new_country_death"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="20dp"-->
+            <!--                android:text="In development"-->
+            <!--                android:textAlignment="center"-->
+            <!--                android:textStyle="bold|italic"-->
+            <!--                android:textColor="#5B212121" />-->
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_country_recovered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_country_name">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Total Recovered"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_country_recovered"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="54232"
+                android:textAlignment="center"
+                android:textColor="#33CE3A" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_new_country_recovered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@id/ll_country_recovered"
+            app:layout_constraintStart_toStartOf="@id/ll_country_recovered"
+            app:layout_constraintTop_toBottomOf="@+id/ll_country_recovered">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="New cases"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#74212121"/>
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_new_country_recovered"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="20dp"-->
+            <!--                android:text="In development"-->
+            <!--                android:textAlignment="center"-->
+            <!--                android:textStyle="bold|italic"-->
+            <!--                android:textColor="#61212121" />-->
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="The data about new cases is still in development phase..."
+            android:textAlignment="center"
+            android:textColor="#61212121"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_new_country_recovered" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

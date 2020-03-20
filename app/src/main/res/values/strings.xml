@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Corona stats</string>
+    <string name="title_activity_all">ActivityAll</string>
+    <string name="tab_text_0">Overall</string>
+    <string name="tab_text_1">All countries</string>
+    <string name="tab_text_2">Favourites</string>
+    <string name="search">Search</string>
+</resources>

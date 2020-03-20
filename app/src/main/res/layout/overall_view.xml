@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ll_deaths"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@id/ll_confirmed"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            android:text="Deaths:"
+            />
+
+        <TextView
+            android:id="@+id/tv_death"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="36sp"
+            android:textColor="#CA1B0E"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_confirmed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            android:text="Total cases:"
+            />
+
+        <TextView
+            android:id="@+id/tv_confirmed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="36sp"
+            android:textColor="#673AB7"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_recovered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/ll_confirmed"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            android:text="Recovered:"
+            />
+
+        <TextView
+            android:id="@+id/tv_recovered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="36sp"
+            android:textColor="#33CE3A"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
